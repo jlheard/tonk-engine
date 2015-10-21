@@ -10,8 +10,8 @@ class Deck extends LinkedList<Card> {
 
     Deck() {
         Card.Suit.values().each { suit ->
-            Card.Value.values().each { rank ->
-                add(new Card(suit: suit, value: rank))
+            Card.Value.values().each { value ->
+                add(new Card(suit: suit, value: value))
             }
         }
     }

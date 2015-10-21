@@ -15,8 +15,8 @@ class DeckTest extends GroovyTestCase {
         assert deck.size() == 52
 
         Card.Suit.values().each { suit ->
-            Card.Value.values().each { rank ->
-                assert new Card(suit: suit, value: rank) in deck
+            Card.Value.values().each { value ->
+                assert new Card(suit: suit, value: value) in deck
             }
         }
 
