@@ -4,15 +4,15 @@ Tonk Engine 0.1
 This is my first attempt at creating an API for playing Tonk for various front ends.  Going to try and brute force this
 myself before using other libraries or libraries, and optimizing code and algorithms.
 
-- Version 0.1: Going to add the basic groundwork of establishing a game.
+- Version 0.1 - Going to add the basic groundwork of establishing a game.
 
+Rules
+======
 These rules come from:
 http://www.pagat.com/rummy/tonk.html
 
 *This page was written by John McLeod and is based on various sources, including articles posted in rec.games.playing-cards, and information on variations from many correspondents.*
 
-Rules
-======
 Introduction
 ---
 
