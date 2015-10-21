@@ -51,8 +51,8 @@ During the game only the top card of the discard pile should be visible. Players
 
 If after drawing from the stock or discard pile you have a spread of three or more cards, you may place them face up on the table. These cards then no longer count towards the total in your hand. There are two types of spread:
 
-A book consists of three or four cards of the same rank, such as spadeQ-heartQ-diamondQ or heart4-club4-diamond4-spade4.
-A run consists of three or more consecutive cards of the same suit, such as spadeA-spade2-spade3 or heart8-heart9-heart10-heartJ. The ace counts as low, next to the two not the king.
+- A book consists of three or four cards of the same rank, such as spadeQ-heartQ-diamondQ or heart4-club4-diamond4-spade4.
+- A run consists of three or more consecutive cards of the same suit, such as spadeA-spade2-spade3 or heart8-heart9-heart10-heartJ. The ace counts as low, next to the two not the king.
 Another possibility to reduce the cards in your hand is to extend a spread previously put down by yourself or another player. Putting down a card to extend a spread is sometimes called hitting. For example if there is club5-club6-club7 on the table and you have club4 or club8 in your hand you can put it on the table, adding it to the run. Cards can only be put down like this in your own turn, after drawing and before discarding.
 
 If by putting down cards, you get rid of all the cards in your hand (by making a second spread or using all your cards to hit existing spreads), the play ends and you win the hand (see below). Otherwise, you complete your turn by discarding one card face up on top of the discard pile. If this leaves you with no cards you win; otherwise the turn passes to the next player to your left and play continues.
@@ -65,15 +65,24 @@ End of the play - payments
 Assuming that no one claims 49 or 50 points immediately after the deal, the play can end in four ways.
 
 Someone gets rid of all their cards without a final discard
+---
 This may happen as a result of a player putting down a second spread or hitting existing spreads on three occasions. This is usually called a tonk, or the player is said to "tonk out". The winner is paid a double stake by each other player.
+
 Someone runs out of cards by discarding their last card
+---
 The player with no cards wins and each of the other players pays the agreed basic stake to the winner.
+
 Someone drops or goes down or knocks at the start of their turn.
+---
 In this case everyone exposes the cards that remain in their hands and adds up the values of the cards they held.
-If the player who dropped has the lowest point count, that player wins and is paid the basic stake by each of the other players.
-If the player who dropped does not have the lowest count, the player who dropped must pay twice the basic stake to everyone who has an equal or lower count. In addition, the player (other than the one who dropped) who actually had the lowest count receives the basic stake from everyone else. In the case of a tie for lowest between two players other than the one who dropped, both are paid. This is sometimes known as a catch.
+- If the player who dropped has the lowest point count, that player wins and is paid the basic stake by each of the other players.
+- If the player who dropped does not have the lowest count, the player who dropped must pay twice the basic stake to everyone who has an equal or lower count. In addition, the player (other than the one who dropped) who actually had the lowest count receives the basic stake from everyone else. In the case of a tie for lowest between two players other than the one who dropped, both are paid. This is sometimes known as a catch.
+
 The stock runs out.
+---
 The player with the lowest count receives the basic stake from each other player.
+
+...
 
 References:
 ---
