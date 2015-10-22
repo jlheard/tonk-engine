@@ -15,6 +15,7 @@ class DealService {
 
     void dealCards(Game game, int cardsToDealEachPlayer) {
         game.deck = deckService.getShuffledDeck()
+        deckService.cutDeck(game.deck)
         int totalCardsDealt = 0
         int totalCardsToDeal = game.players.size() * cardsToDealEachPlayer
 
