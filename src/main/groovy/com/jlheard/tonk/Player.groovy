@@ -1,4 +1,4 @@
-package com.jlheard.game
+package com.jlheard.tonk
 
 import org.apache.commons.lang.RandomStringUtils
 
@@ -11,7 +11,7 @@ import org.apache.commons.lang.RandomStringUtils
 class Player {
 
     String username = RandomStringUtils.randomAlphabetic(5)
-    Hand hand
+    Hand hand = new Hand()
     Integer chips
 
     def getPointsInHand() {
@@ -31,5 +31,13 @@ class Player {
 
     int hashCode() {
         return username.hashCode()
+    }
+
+
+    @Override
+    public String toString() {
+        return "Player{" +
+                "username='" + username + '\'' +
+                '}';
     }
 }

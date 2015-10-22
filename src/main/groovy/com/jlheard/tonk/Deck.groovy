@@ -1,4 +1,4 @@
-package com.jlheard.game
+package com.jlheard.tonk
 
 /**
  * Created with IntelliJ IDEA.
@@ -8,11 +8,16 @@ package com.jlheard.game
  */
 class Deck extends LinkedList<Card> {
 
-    Deck() {
+    void populate() {
         Card.Suit.values().each { suit ->
             Card.Value.values().each { value ->
                 add(new Card(suit: suit, value: value))
             }
         }
+    }
+
+    def drawCard(Card card) {
+        remove(card)
+        return card
     }
 }

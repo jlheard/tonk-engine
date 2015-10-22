@@ -1,4 +1,4 @@
-package com.jlheard.game
+package com.jlheard.tonk
 
 /**
  * Created with IntelliJ IDEA.
@@ -8,9 +8,10 @@ package com.jlheard.game
  */
 class DeckTest extends GroovyTestCase {
 
-    void testDeckCreation() {
+    void testDeckPopulation() {
 
         def deck = new Deck()
+        deck.populate()
 
         assert deck.size() == 52
 
@@ -19,7 +20,18 @@ class DeckTest extends GroovyTestCase {
                 assert new Card(suit: suit, value: value) in deck
             }
         }
+    }
 
+    void testDrawCard() {
+        def deck = new Deck()
+        deck.populate()
+
+        def expectedCard = deck.first
+        def drawnCard = deck.drawCard(expectedCard)
+
+        assert deck.size() == 51
+        assert expectedCard == drawnCard
+        assert !(drawnCard in deck)
     }
 
 }

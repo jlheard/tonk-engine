@@ -1,4 +1,4 @@
-package com.jlheard.game
+package com.jlheard.tonk
 
 /**
  * Created with IntelliJ IDEA.
@@ -6,7 +6,7 @@ package com.jlheard.game
  * Date: 10/20/15
  * Time: 11:23 PM
  */
-class Card {
+class Card implements Comparable<Card> {
 
     public enum Suit {
         CLUB, DIAMOND, HEART, SPADE
@@ -46,4 +46,15 @@ class Card {
         result = 31 * result + value.hashCode()
         return result
     }
+
+    @Override
+    int compareTo(Card o) {
+        return this?.value?.rank <=> o?.value?.rank
+    }
+
+    @Override
+    public String toString() {
+        return "${value.name()} OF ${suit.name()}S";
+    }
+
 }

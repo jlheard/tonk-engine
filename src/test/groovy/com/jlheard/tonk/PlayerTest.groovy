@@ -1,4 +1,6 @@
-package com.jlheard.game
+package com.jlheard.tonk
+
+import com.jlheard.service.DeckService
 
 /**
  * Created with IntelliJ IDEA.

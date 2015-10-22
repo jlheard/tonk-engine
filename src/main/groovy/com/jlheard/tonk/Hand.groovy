@@ -1,4 +1,4 @@
-package com.jlheard.game
+package com.jlheard.tonk
 
 /**
  * Created with IntelliJ IDEA.
