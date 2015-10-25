@@ -9,7 +9,7 @@ License
 ---
 ISC see LICENSE.md for more detail
 
-Intro
+Project Summary
 ---
 This an attempt at creating an API for playing the card game Tonk with various front ends.
 
