@@ -34,11 +34,11 @@ class DeckServiceTest extends GroovyTestCase {
         randomStub.demand.getRandomInt(1) {int max, int min -> cutIndex}
 
         randomStub.use {
-            def cutDeck = deckService.cutDeck(deck)
+            deckService.cutDeck(deck)
 
-            assert cutDeck.size() == 52
-            assert expectedFirstCard == cutDeck.first
-            assert expectedMiddleCard == cutDeck[cutDeck.size()-cutIndex]
+            assert deck.size() == 52
+            assert expectedFirstCard == deck.first
+            assert expectedMiddleCard == deck[deck.size()-cutIndex]
         }
 
 
