@@ -9,8 +9,8 @@ package com.jlheard.tonk
 class Deck extends LinkedList<Card> {
 
     void populate() {
-        Card.Suit.values().each { suit ->
-            Card.Value.values().each { value ->
+        Card.Value.values().each { value ->
+          Card.Suit.values().each { suit ->
                 add(new Card(suit: suit, value: value))
             }
         }

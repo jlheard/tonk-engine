@@ -49,7 +49,7 @@ class Card implements Comparable<Card> {
 
     @Override
     int compareTo(Card o) {
-        return this?.value?.rank <=> o?.value?.rank
+        return this?.value?.rank <=> o?.value?.rank ?: this?.suit?.ordinal() <=> o?.suit?.ordinal()
     }
 
     @Override

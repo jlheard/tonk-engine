@@ -18,10 +18,6 @@ class Game {
                 '}';
     }
 
-    public enum Status {
-        INITIATED, NEW, FIRST_DEAL, IN_PROGRESS, NEW_DEAL, FINISHED
-    }
-
     private String id = UUID.randomUUID()
 
     Integer stake = 0
@@ -30,7 +26,7 @@ class Game {
     Deck stock = new Deck()
     Deck discardPile = new Deck()
 
-    Status status = Status.INITIATED
+    GameStatus status = GameStatus.INITIATED
 
     LinkedList<Player> players = []
 

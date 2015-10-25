@@ -11,11 +11,7 @@ import com.jlheard.tonk.Game
  */
 class DealService {
 
-    DeckService deckService
-
     void dealCards(Game game, int cardsToDealEachPlayer) {
-        game.deck = deckService.getShuffledDeck()
-        deckService.cutDeck(game.deck)
         int totalCardsDealt = 0
         int totalCardsToDeal = game.players.size() * cardsToDealEachPlayer
 
@@ -28,7 +24,8 @@ class DealService {
             }
         }
 
-        game.stock = game.deck.take(game.deck.size()) as Deck
+        game.stock = game.deck
+        game.deck = new Deck()
 
         def firstCardOfDiscardPile = game.stock.drawCard(game.stock.first)
         game.discardPile.add(firstCardOfDiscardPile)

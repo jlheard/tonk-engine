@@ -1,5 +1,7 @@
 package com.jlheard.tonk
 
+import com.jlheard.service.DeckService
+
 /**
  * Created with IntelliJ IDEA.
  * User: jheard
@@ -16,6 +18,16 @@ class CardTest extends GroovyTestCase {
         assert 0 == new Card(suit: Card.Suit.SPADE, value: Card.Value.JACK).compareTo(new Card(suit: Card.Suit.SPADE, value: Card.Value.JACK))
         assert 1 == new Card(suit: Card.Suit.DIAMOND, value: Card.Value.JACK).compareTo(new Card(suit: Card.Suit.SPADE, value: Card.Value.TEN))
         assert -1 == new Card(suit: Card.Suit.SPADE, value: Card.Value.JACK).compareTo(new Card(suit: Card.Suit.SPADE, value: Card.Value.QUEEN))
+    }
+
+    void testCardSort() {
+        def orderedDeck = new Deck()
+        orderedDeck.populate()
+
+        def shuffledDeck = new DeckService().getShuffledDeck()
+        shuffledDeck.sort()
+
+        assert orderedDeck == shuffledDeck
     }
 
 }

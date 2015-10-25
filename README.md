@@ -1,10 +1,21 @@
 Tonk Engine 0.1
 ===
 
-This is my first attempt at creating an API for playing Tonk for various front ends.  Going to try and brute force this
-myself before using other libraries or libraries, and optimizing code and algorithms.
+Collaborators
+---
+Jason Heard
 
-- Version 0.1 - Going to add the basic groundwork of establishing a game.
+License
+---
+ISC see LICENSE.md for more detail
+
+Intro
+---
+This an attempt at creating an API for playing the card game Tonk with various front ends.
+
+Versions
+---
+- 0.1 - Going to add the basic groundwork of establishing a game.
 
 Rules
 ======

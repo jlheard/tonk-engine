@@ -1,5 +1,6 @@
 package com.jlheard.service
 
+import com.jlheard.tonk.Deck
 import com.jlheard.tonk.Game
 import com.jlheard.tonk.Player
 
@@ -15,8 +16,9 @@ class DealServiceTest extends GroovyTestCase {
 
         def cardsToDeal = 5
         def dealService = new DealService()
-        dealService.deckService = new DeckService()
         def game = new Game()
+        game.deck.populate()
+
         def player1 = new Player(username: "player1")
         def player2 = new Player(username: "player2")
 

@@ -13,6 +13,7 @@ class Player {
     String username = RandomStringUtils.randomAlphabetic(5)
     Hand hand = new Hand()
     Integer chips
+    boolean isDealer = false
 
     def getPointsInHand() {
         hand?.value?.points?.sum()
