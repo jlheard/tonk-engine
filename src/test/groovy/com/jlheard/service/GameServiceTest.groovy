@@ -8,7 +8,6 @@ import groovy.mock.interceptor.StubFor
 
 import static com.jlheard.service.GameService.ADD_PLAYER_TO_GAME_STATUSES
 import static com.jlheard.service.GameService.DETERMINE_PLAYER_TO_DEAL_STATUSES
-import static com.jlheard.service.GameService.SHUFFLE_DECK_STATUSES
 import static com.jlheard.service.GameService.START_GAME_STATUSES
 import static com.jlheard.service.GameService.START_NEW_ROUND_STATUSES
 
@@ -50,8 +49,8 @@ class GameServiceTest extends GroovyTestCase {
     void testAddPlayerToGameHappyPath() {
         gameService.createNewGame(0)
 
-        assert gameService.addPlayerToGame(PLAYER_1)
-        assert gameService.addPlayerToGame(PLAYER_2)
+        assert gameService.addPlayerToGame(PLAYER_1.username, 5000)
+        assert gameService.addPlayerToGame(PLAYER_2.username, 2000)
 
         assert [PLAYER_1, PLAYER_2] == gameService.game.players
     }

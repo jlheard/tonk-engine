@@ -21,6 +21,7 @@ class Game {
     private String id = UUID.randomUUID()
 
     Integer stake = 0
+    Integer playerTurnIndex = 0
 
     Deck deck = new Deck()
     Deck stock = new Deck()
